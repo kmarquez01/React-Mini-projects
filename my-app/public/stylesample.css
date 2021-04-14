@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #047aed;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-component{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
