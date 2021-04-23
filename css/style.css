@@ -1,0 +1,475 @@
+
+
+#home{
+
+/* 	background-image:url('../images/1155043.jpg'); 
+	background-position: center right; */
+
+	background-color: rgb(16,16,16);
+
+
+
+	height: 875px;
+
+	font-family: Helvetica;
+
+	font-size: 30px;
+
+	padding-top: 100px;
+
+	line-height: 1.6em;
+
+	text-align: center;
+
+
+	border: 5px black solid;
+}
+
+#home h1{
+	position: relative;
+	color: black;
+	line-height: 1.6em;
+	top: 200px;
+}
+
+.button{
+	position: relative;
+	top: 200px;
+	border: solid 2px;
+	border-color: black;
+	display: inline-block;
+	padding: 5px 20px;	
+	transition: all 0.5s;
+}
+
+.button:hover{
+	color:black;
+	background-color: gray;
+
+}
+
+.button a{
+	color: black;
+	text-decoration: none
+
+}
+
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#navbar li{
+	display: inline;
+	text-align: center
+}
+
+#navbar a{
+	color:black;
+	text-decoration: none;
+	font-size: 25px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#header{
+
+	position: relative;
+	top: -30px;
+	color: black;
+	background-color: white;
+	font-size: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+
+	width: 90%;
+
+	margin: auto;
+
+	text-align: center;
+
+
+
+}
+
+#about{
+	position: relative;
+	padding-top: 75px
+
+}
+
+.icon1{
+	position: relative;
+	vertical-align: top;
+	left: 250px;
+
+
+}
+
+.creative{
+	position: absolute;
+	font-family: helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	left: 30px;
+	bottom: -40px;
+	color: black;
+	display: block;
+
+}
+
+.icon2{
+
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+
+	border-bottom: 100px solid black;
+
+	position: relative;
+	vertical-align: top;
+	left: 600px;
+	bottom: 100px ;
+}
+
+.icon3{
+
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+
+	border-bottom: 50px solid white;
+
+	position: relative;
+	vertical-align: top;
+	left: -30px;
+	top: 15px;
+}
+
+.icon4{
+
+	position: relative;
+	vertical-align: center;
+	left: 1000px;
+	bottom: 215px ;
+}
+
+.material-icons {
+	position: absolute;
+	top: 125px;
+	right: 300px;
+}
+
+.icon5{
+	position: absolute;
+	right: 325px;
+	top: 275px;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+
+}
+
+.resourceful{
+	position: absolute;
+	font-family: helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	left: 15px;
+	bottom: -10px;
+	color: black;
+	display: block;
+
+}
+
+.adaptable{
+	position: relative;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	top: 120px;
+	left: -50px;
+	color: black;
+	display: inline-block;
+
+}
+
+ .me img{
+ width: 800px;
+ position: absolute;
+ left:950px;
+ top: 350px;
+}
+
+.paragraph1{
+	color: black;
+	background-color: white;
+
+
+	font-family: Helvetica, Arial, sans-serif;
+
+	font-size:20px;
+
+	line-height: 1.6em;
+
+	width: 30%;
+
+	position: absolute;
+
+	left: 150px;
+
+	text-align: justify;
+
+	top: 400px;
+
+
+}
+
+.container3{
+	position: relative;
+	bottom: -300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 350px;
+}
+
+.circle{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 10vw;
+	height: 10vw;
+	background-color: black;
+	border-radius: 50%;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 1vw;
+
+}
+
+
+#projects{
+	text-align: center;
+	padding-top: 150px;
+	font-family: Helvetica;
+	font-size: 24px;
+	background-color: rgb(220,220,220);
+	padding-bottom: 150px;
+}
+
+.container1{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin:  auto;
+
+}
+
+.container1 .box{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: black;
+	float: left;
+	margin: 15px;
+}
+
+
+
+#contact{
+	background-color: rgb(16,16,16);
+	position:relative;
+	text-align: center;
+	padding: 200px 25px 400px 20px;
+}
+
+.head{
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 32px;
+
+}
+
+.phrase{
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: Times-New-Roman;
+	font-size: 32px;
+	font-style: italic;
+
+}
+
+
+.first{
+	position: relative;
+	text-align: center;
+}
+
+
+.first input{
+	width: 500px; 
+	height: 40px;
+	font-family: Helvetica, Tahoma, sans-serif;
+	font-size: 20px;
+	outline:none;
+	border: 0;
+}
+
+.last{
+	position: relative;
+	text-align: center
+}
+
+.last input{
+	width: 500px; 
+	height: 40px;
+	font-family: Helvetica, Tahoma, sans-serif;
+	font-size: 20px;
+	outline: none;
+	border: 0;
+}
+
+.email{
+	position: relative;
+	text-align: center
+
+}
+
+.email input{
+	width: 1012px;
+	height: 40px;
+	font-family: Helvetica, Tahoma, sans-serif;
+	font-size: 20px;
+	outline: none;
+	border: 0;
+}
+
+.error{
+	color: white;
+}
+
+.message{
+	position: relative;
+	text-align: center;
+}
+
+.message textarea{
+	width: 1012px;
+	height: 100px;
+	font-family: Helvetica, Tahoma, sans-serif;
+	font-size: 20px;
+	outline:none;
+	border: 0;
+}
+
+.button1{
+	position: relative;
+	left: 475px;
+	border: solid 2px;
+	border-color: black;
+	display: inline-block;
+	padding: 5px 20px;	
+	transition: all 0.5s;
+}
+
+.button1:hover{
+	color:black;
+	background-color: gray;
+
+}
+
+.socialmedia{
+	position: relative;
+	text-align: center;
+}
+
+.socialmedia li{
+	list-style: none;
+	margin: 10px 30px;
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 25px;
+}
+
+.socialmedia li:hover{
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	transition: all 0.5s;
+}
+
+.socialmedia a{
+	text-decoration: none;
+	color:white;
+}
+
+.socialmedia a:hover{
+	color: black;
+	background-color: white;
+	transition: all 0.5s;
+}
+
+@media only screen and (max-width: 411px){
+
+
+	.paragraph1{
+
+	position: relative;
+
+	padding: 0px 20px 20px;
+
+	font-size:16px;
+
+	width: 75%;
+
+	top: 100px;
+
+	left: 20px;
+
+
+
+	}
+
+	.me img{
+		width: 400px;
+		text-align: center;
+		position: absolute;
+		left: 0px;
+		bottom: 70px;
+	}
+
+	.icon1{
+
+	position: relative;
+	vertical-align: top;
+	left: 100px;
+	bottom: 750px;
+
+	}
+
+	.material-icons {
+		display: none;
+	}
+
+	.icon5{
+	
+		display: none;
+
+	}
+
+
+
+}

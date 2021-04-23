@@ -4,12 +4,11 @@ import TodoComponent from "./TodoComponent"
 
 import TodoData from "./TodoData"
 
-
 class TodoContainer extends React.Component{
     constructor(){
         super()
         this.state = {
-            todos: TodoData,
+            todos: TodoData
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleInput = this.handleInput.bind(this)
@@ -31,17 +30,16 @@ class TodoContainer extends React.Component{
     }
 
     handleInput(event){
-
+       
         this.setState({
-            [event.target.name]: event.target.value           
-         });
-
+            [event.target.name]: event.target.value
+        })
+        
     }
 
     addItem(event){
         event.preventDefault();
 
-        let value = event.target.value;
         
         const tasks =  {
             id: Math.random(),
@@ -50,17 +48,11 @@ class TodoContainer extends React.Component{
 
             completed: false
         } 
-
-        if(!value){
-            return null
-        }
-        else{
-            this.setState({
-                todos: [...this.state.todos, tasks]
-               
-            })
-        }
         
+        this.setState({
+            todos: [...this.state.todos, tasks]
+           
+        })
 
         console.log(this.state.todos)
     }
@@ -72,13 +64,11 @@ class TodoContainer extends React.Component{
              />)
 
         return(
-                <div className= "container">
-                    <h1>Todo List</h1>
-                    {todoItems}
-                    <input type = "text" name = "job" placeholder = "Enter task" onChange = {this.handleInput}/>
-                    <button type = "submit" name = "submit" value = {this.state.job} onClick = {this.addItem}>Add task</button>
-                    <p>{this.state.inputError}</p>
-                </div>
+            <div className= "container">
+                {todoItems}
+                <input type = "text" name = "job" placeholder = "Enter task" onChange = {this.handleInput}/>
+                <button type = "submit" name = "submit" value = {this.state.job} onClick = {this.addItem}>Add task</button>
+            </div>
             )  
                 
     }
