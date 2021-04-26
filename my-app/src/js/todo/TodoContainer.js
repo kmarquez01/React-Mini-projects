@@ -10,7 +10,7 @@ class TodoContainer extends React.Component{
         super()
         this.state = {
             todos: TodoData,
-            error: "",
+            error: ""
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleInput = this.handleInput.bind(this)
@@ -45,10 +45,11 @@ class TodoContainer extends React.Component{
 
         let value = event.target.value;
         
+        
         const tasks =  {
             id: Math.random(),
 
-            job: event.target.value,
+            job: value,
 
             completed: false
         } 
@@ -68,8 +69,7 @@ class TodoContainer extends React.Component{
         }
         else{
             this.setState({
-                todos: [...this.state.todos, tasks]
-               
+                todos: [...this.state.todos, tasks],
             })
         }
         
@@ -77,9 +77,8 @@ class TodoContainer extends React.Component{
         console.log(this.state.todos)
     }
 
-    removeItem(id){
+    removeItem(){
         
-  
             this.state.todos.splice(0, 1)
             this.setState({
                 todos: this.state.todos
@@ -87,8 +86,6 @@ class TodoContainer extends React.Component{
       
         
     }
-
-
 
     render()
     {
@@ -104,7 +101,7 @@ class TodoContainer extends React.Component{
                         {todoItems}
                         <div className = "bar">
                             <input type = "text" name = "job" placeholder = "Enter task" onChange = {this.handleInput}/>
-                            <button type = "submit" name = "submit" value = {this.state.job} onClick = {this.addItem}>Add task</button>
+                            <button type = "submit" defaultValue = "" name = "submit" value = {this.state.job} onClick = {this.addItem}>Add task</button>
                         </div>
                         <div className= "error">
                             {this.state.error}
